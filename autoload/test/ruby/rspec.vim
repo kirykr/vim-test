@@ -19,10 +19,6 @@ endfunction
 function! test#ruby#rspec#build_args(args) abort
   let args = a:args
 
-  if test#base#no_colors()
-    let args = ['--no-color'] + args
-  endif
-
   return args
 endfunction
 
